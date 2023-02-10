@@ -1,0 +1,245 @@
+/*CSS reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*CSS reset end*/
+
+
+*{
+    font-family: Open Sans;
+}
+
+/*NAV BAR*/
+
+nav{
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    padding-top: 15px;
+    background-color: white;
+    z-index: 1;
+}
+
+.right-nav{
+    list-style-type: none;
+    float: right;
+    margin-right: 70px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+li{
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.nav {
+  display: inline-block;
+  font-size: 17px;
+  color: black;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav:hover {
+  color: #1e90ff;
+}
+
+.tuitt-button:hover{
+    color: #a8dadc;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #1e90ff;
+  transition: width 0.3s ease;
+}
+
+.nav:hover::before {
+  width: 100%;
+}
+    /*WHOLE NAV BAR UNDERLINE */
+nav::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  position: absolute;
+  height: 4px;
+  background-color: #fb8500;
+  transition: width 1s ease;
+}
+
+nav:hover::before {
+  width: 100%;
+}
+
+    /*WHOLE NAVBAR UNDERLINE END*/
+
+.tuitt-button{
+    background-color: #c2195b;
+    color: white;
+    padding: 0px 10px;
+    position: relative;
+    bottom: 8px;
+    border: 10px solid #c2195b;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.nav-logo{
+    list-style-type: none;
+    display: inline-block;
+    top: -5px;
+    position: relative;
+    margin-left: 100px;
+}
+
+
+    /*NAV BAR end*/
+
+/*LANDING PAGE*/
+#bg-image{
+        height: 100vh;
+        background-image: url(https://d3ojsfl21hfxhc.cloudfront.net/assets/zuitt/programdetails2_w.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 4px;
+  background-color: #ffbd00;
+  transition: width 1s ease;
+}
+
+section:hover::before {
+  width: 100%;
+}
+
+/*whole animation page animation end*/
+.front-bg{
+         background-color: rgba(0,0,0,0.4);
+         min-height: 100vh;
+}
+.title{
+        font-size: 44px;
+        font-family: zilla slab;
+        font-weight: 900px;
+        width: 50%;
+        margin-left: 505px;
+}
+
+.subtitle{
+            font-family: zilla slab;
+            font-size: 23px;
+            font-weight: 200;
+            width: 35%;
+            padding: 0px;
+            text-align: right;
+            margin-left: 710px;
+            margin-top: 25px;
+}
+.container{
+        position: relative;
+         color: white;
+         text-align: right;
+         top: 25px;
+}
+
+.apply-button{
+    position: absolute;
+    background-color: #c2195b;
+    border: 10px solid #c2195b;
+    border-radius: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    right: 170px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.apply-button:hover{
+    color:  #1e90ff;
+    transition: all 0.3s ease;
+}
+.apply-button::before {
+    content: "";
+    height: 2px;
+    background-color: #1e90ff;
+    position: absolute;
+    left: 0px;
+    bottom: -19px;
+    width: 0%;
+    transition: all 0.3s ease;
+}
+
+.apply-button:hover::before{
+    width: 100%;
+}
+
+/*END LANDING PAGE*/
+
+/*INTRO SECTION*/
+.intro{
+         text-align: center;
+         margin: 100px; 
+         margin-top: 30px;
+         margin-bottom: 90px;
+}
+
+.title-2{
+         font-family: Zilla Slab;
+         line-height: 10rem;
+         font-size: 2rem;
+         text-align: center;
+}
+
+.intro-description{
+         text-align: center;
+}
+
+.pre-footer{
+         background-color: #f7fbfb;
+         padding: 150px;
+         padding-top: 50px;
+}
+
+.prefooter-description{
+        text-align: center;
+        padding: 8px;
+}
+
+.book-button{
+    background-color: #336589;
+    border: 10px solid  #336589;
+    border-radius: 50px;
+    color: white;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+footer{
+         text-align: center;
+         padding: 10px;
+}
+
+.containerbutton{
+    text-align: center;
+}
